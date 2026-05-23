@@ -31,6 +31,17 @@ export default function LandingPage() {
         headingFontWeight="bold"
     >
       <ReactLenis root>
+        {/* Pulse Animated WhatsApp Button */}
+        <a 
+          href={whatsappLink} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="fixed bottom-8 right-8 z-50 flex items-center justify-center w-16 h-16 rounded-full bg-[#004b87] shadow-xl transition-all duration-300 hover:scale-110"
+        >
+          <span className="absolute inset-0 rounded-full bg-[#d4af37] animate-ping opacity-75"></span>
+          <MessageCircle className="w-8 h-8 text-[#d4af37]" />
+        </a>
+
   <div id="nav" data-section="nav">
       <NavbarStyleFullscreen
       navItems={[
